@@ -1,0 +1,126 @@
+program intinya kumpulan instruksi yang kita berikan ke komputer. nah instruksinya itu diberikan agar si komputernya bekerja sesuai dengan apa yang kita mau (instruksinya), biar apa, biar bisa membantu atau memudahkan pekerjaan kita.
+
+source code itu, program yang kita tulis melalui bahasa pemrograman yang banyak jenis nya (java,php,pascal,dll) yang nantinya akan di terjemahkan menjadi bahasa mesin. 
+
+website unutk melihat bahasa apa buat apa ada di youtube sandhika bagian compiler vs interpreter
+
+tipe data pada javascript
+number, string, boolean, object, function, undefined
+
+kita bisa menyimpan angka:
+1. angka tanpa desimal : 10,100,2,33,123243
+2. angka dengan desimal : 3.22, 5.6, 44.544
+3. angka eksponen : 123e5 > 12300000, 123e-5 > 0.00123
+4. bisa bilangan negatif
+5. angka special : infinity, -infinity, NaN
+6. jangan awali angka javascript dengan 0 dan 0x. nanti dia malah ngitung bilangan oktal dan bilangan hexadesimal
+
+operator pada javascript
+aritmatika, penugasan, perbandingan, logika, string, kondisional, typeof
+
+operator aritmatika (+ - * / %)
+operator penugasan (=, +=, -=, *=, /=, %=)
+(x+=y >> x = x + y)
+
+operator perbandingan, menghasilkan boolean (true atau false)
+== sama dengan
+!= tidak sama dengan
+=== strict sama dengan (operator identitas)
+!== strick tidak sama dengan (operator identitas)
+
+> lebih besar dari
+< lebih kecil dari
+>= lebih besar sama dengan
+<= lebih kecil sama dengan
+
+logika (&& || !)
+&& dan and
+|| atau or
+! not tidak
+
+operator string (+) (untuk menambahkan/menggabungkan string)
+
+operator typeof (unary) untuk mengetahuui tipe data apa nilai yang dikita masukkan
+typeof(operand)
+
+operator kondisional (ternary) butuh 3 operand, pengecekan kondisi.
+(kondisi) ? benar : salah
+
+tipe data string, digunakan untuk teks (plain tteks) dibungkus dengan kutip dua
+"some_text"
+
+escape character \" or \', supaya bisa memakai kutip didalam string teks
+\0 = karakter null
+\' = tambah kutip satu '
+\" = tambah kutip dua "
+\\ = \
+\n = new line (baris baru)
+\t = tab
+\b = backspace 
+\uxxxx = unicode, cari aja list unicode nya.
+concatenation = '+'
+.length = pnajang string
+
+tipe data boolean intinya true or false banyak di pake pas udah ada pengkondisian, udah paham lah~~~
+
+variabel dalam javascript
+deklarasi : mendaftarkan variabel ke dallam lingkup yang sesuai
+inisialisasi : menyediakan memori untuk variabel
+assignment : menetapkan nilai yang spesifik kedalam variabel
+
+var x; // deklarasi dan inisialisasi
+x = 20; // assignment menetapkan angka 20 untuk disimpan di x
+
+keyword lain deklarasi : var let const
+
+var <nama_variable>; // gunakan format camelCase, huruf kapital dikata selanjutnya.
+
+shorthand
+var nama = "Martin",
+    umur = 21,
+    lulus = true;
+variable scope akan dipelajari setelah belajar function dan objek
+
+MENULIS javascript 
+buat tag <script></script> pada file html nya. bisa internal didalam file html, atau dibuat eksternal seperti file CSS.
+
+simpan scriptnya sebelum akhir tag body. supaya halaman htmlnya dulu yg di load ke memori, baru javascriptnya (lebih jelas ada di Document object Model).
+
+popup box / dialog box
+alert, prompt, confirm
+
+alert : alert(something); bisa angka, bisa string, atau apapun.
+
+prompt : prompt(something); dia tidak hanya menampilkan oke saja seperti alert. tapi ada text-box nya, untuk masuk inputtan. prompt ini mengembalikan nilai yang kita masukkan di text-box nya ke variabel (menampung nilai variabel seperti scanner di java).
+var nama = prompt('Siapa namamu?');
+
+confirm : confirm(something); sama seprti alert, cuma tombolnya ada cancel dan oke, dan kita bisa membuat aksi apa yang dijalankan jika salah satu dari kedua tombol itu ditekan. nilai yang dikembalikan adalan boolean (true (oke) or false (cancel))
+
+control flow pemrograman
+maksudnya, kadang kita ga harus melulu programnya jalan statis dari atas ke bawah, dari statement pertama sampai akhir hanya garis lurus kebawah. maka dari itu diperlukan kontrol flow agar program kita lebih dinamis dan fleksibel dalam mengeksekusi program. dibutuhkan pengulangan dan pengkondisian
+
+pengulangan (loog / iteration)
+for, while, do while.
+
+while : 
+while(kondisi){
+    aksi
+}
+nilai awal
+while (kondisi terminasi) {
+    aksi
+    increment / decrement
+}
+tabel penelusuran (trace table / dry run test)
+
+for : 
+for (var variabel = nilai_awal; variabel <= nilai_selesai; variabel++) {
+
+    isi_program;
+    
+}
+
+percabangan / pengkondisian 
+if, if..else, switch, if..else if..else
+
+konversi string ke int >> parseInt();

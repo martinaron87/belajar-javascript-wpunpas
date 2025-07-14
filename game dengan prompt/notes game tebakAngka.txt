@@ -1,0 +1,16 @@
+user diminta memasukkan angka 1-10 untuk menebak angka yang sudah dipilih oleh komputer antara 1-10 berupa bilangan bulat, dan user diberikan 3x kesempatan untuk menebak angka tersebut. cari cara membangkitkan bilangan bulat random dari 1-10 menggunakan javascript
+
+alert yang pertama kali muncul berisi tulisan "Selamat datang di permainan tebak angka!"
+"\n Silahkan pilih angka antara 1-10" 
+"\n Kamu memiliki 3 kesempatan untuk memilih"
+
+prompt kedua berisikan tulisan "Masukkan angka tebakanmu : "
+
+alert ketiga berisikan keterangan apakah angka yang dimasukkan user lebih rendah, lebih tinggi, atau sama dengan angka yang dipilih komputer. 
+Jika lebih rendah, maka menampilkan tulisan "Tebakanmu terlalu rendah!" dan "Kamu memiliki 2 kesempatan lagi!"
+Jika lebih tinggi, maka menampilkan tulisan "Tebakanmu terlalu tinggi!" dan "Kamu memiliki 2 kesempatan lagi!"
+lalu langsung kembalik ke bagian menebak angka lagi
+Jika sama, maka menampilkan tulisan "Tebakanmu benar!" dan "Selamat kamu menang!" dan permainan selesai dengan alert "Terima kasih sudah bermain!"
+
+jika sudah habis kesempatannya maka menampilkan alert "Kesempatanmu sudah habis!", "Game Over!" dan menampilkan angka yang benar 
+dan permainan selesai dengan alert "Terima kasih sudah bermain!"
